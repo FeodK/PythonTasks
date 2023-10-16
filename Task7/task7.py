@@ -12,4 +12,4 @@ Output: YES
 
 year = int(input())
 result = ['NO', 'YES']
-print(result[year%4 == 0])
+print(result[(year%4 == 0 or year%100 != 0) or year%400 == 0])
